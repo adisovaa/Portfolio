@@ -1,0 +1,21 @@
+.contacts {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+.contact {
+    display: grid;
+    justify-content: center;
+}
+
+.textFiled {
+    width: 500px;
+}
+
+.textFiledText {
+    width: 500px;
+}
+
+.contactBtn {
+    justify-content: center;
+}

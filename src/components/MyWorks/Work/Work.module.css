@@ -1,0 +1,12 @@
+.works {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work {
+    width: 45%;
+}
+
+.cardsImg {
+    height: 300px;
+}

@@ -1,17 +1,16 @@
 import React from 'react';
-import s from './Header.module.css'
+import style from './Header.module.css'
+import {Nav} from "../Nav/Nav";
+import commonStyles from "../common/styles/commonStyles.module.css";
 
 export const Header = () => {
     return (
         <header>
-            <nav>
-                <ul className={s.menu}>
-                    <li>Main</li>
-                    <li>Skills</li>
-                    <li>My projects</li>
-                    <li>My contacts</li>
-                </ul>
-            </nav>
+            <div className={commonStyles.container}>
+                <div className={style.classHeader}>
+                    <Nav/>
+                </div>
+            </div>
         </header>
     );
 };

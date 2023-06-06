@@ -1,0 +1,12 @@
+.nav {
+    border: 1px solid red;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}

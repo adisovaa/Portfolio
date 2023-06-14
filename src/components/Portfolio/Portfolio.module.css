@@ -1,23 +1,20 @@
-.skillsBlock {
-    background-color: #d0b8e7;
-    height: 80vh;
+.portfolio {
+    background-color: #c4a1a1;
+    height: 100vh;
     padding: 100px 0;
 }
 
-.skillsContainer {
+.portfolioContainer {
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
-.skillsTitle {
+.portfolioTitle {
     background-color: lightgray;
 }
 
-.skills {
-    border: 1px solid;
-    width: 100%;
+.portfolioBlock {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
-

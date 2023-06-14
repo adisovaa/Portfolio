@@ -1,11 +1,10 @@
 .mainBlocks {
     background-color: #e8a9a9;
     height: 100vh;
+    padding: 100px 0;
 }
 
 .mainBlock {
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -19,3 +18,4 @@
     height: 400px;
     background-color: #fff;
 }
+

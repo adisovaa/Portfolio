@@ -1,42 +1,19 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import s from './Contacts.module.css'
+import * as React from 'react'
+import style from './Contacts.module.css'
+import commonStyles from "../common/styles/commonStyles.module.css";
 
 export default function Contacts() {
     return (
-        <div className={s.contacts}>
-            <Box className={s.contact}
-                // sx={{
-                //     display: 'flex',
-                //     alignItems: 'center',
-                //     '& > :not(style)': {m: 1},
-                // }}
-            >
-                <TextField
-                    className={s.textFiled}
-                    helperText="Please enter your name"
-                    id="demo-helper-text-aligned"
-                    label="Name"
-                />
-                <TextField
-                    className={s.textFiled}
-                    helperText=" "
-                    id="demo-helper-text-aligned-no-helper"
-                    label="Email"
-                />
-                <TextField
-                    className={s.textFiledText}
-                    helperText=" "
-                    id="demo-helper-text-aligned-no-helper"
-                    label="Text"
-                />
-            </Box>
-            <Stack spacing={2} direction="row" className={s.contactBtn}>
-                <Button variant="outlined">Send</Button>
-            </Stack>
+        <div className={style.contacts}>
+            <div className={`${commonStyles.container} ${style.contactBlock}`}>
+                <h2 className={style.skillsTitle}>Contacts</h2>
+                <div className={style.form}>
+                    <input type='text' placeholder='name'/>
+                    <input type='email' placeholder='email'/>
+                    <textarea placeholder="text"/>
+                </div>
+                <button className={style.formBtn}>Send</button>
+            </div>
         </div>
     );
 }

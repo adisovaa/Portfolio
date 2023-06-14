@@ -1,24 +1,16 @@
 import React from 'react';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import s from './Remote.module.css'
+import commonStyles from "../common/styles/commonStyles.module.css";
+import style from "./Remote.module.css";
 
 export const Remote = () => {
     return (
-        <div className={s.remote}>
-            <div>
+        <div className={style.remote}>
+            <div className={`${commonStyles.container} ${style.remoteBlock}`}>
                 <h1>Investigating options for remote work</h1>
+                <button className={style.remoteBtn}>Button</button>
             </div>
-            <BasicButtons/>
         </div>
-    );
+    )
 };
 
 
-function BasicButtons() {
-    return (
-        <Stack spacing={2} direction="row" className={s.remoteBtn}>
-            <Button variant="outlined">Outlined</Button>
-        </Stack>
-    );
-}

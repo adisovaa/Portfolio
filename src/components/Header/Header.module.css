@@ -1,12 +1,10 @@
-header {
+.header {
     background-color: #b0f3e6;
     height: 80px;
 }
 
-.classHeader {
-    background-color: #b0f3e6;
-    height: 80px;
+.headerNav {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }

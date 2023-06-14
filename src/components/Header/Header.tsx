@@ -5,12 +5,12 @@ import commonStyles from "../common/styles/commonStyles.module.css";
 
 export const Header = () => {
     return (
-        <header>
+        <div className={style.header}>
             <div className={commonStyles.container}>
-                <div className={style.classHeader}>
+                <div className={style.headerNav}>
                     <Nav/>
                 </div>
             </div>
-        </header>
+        </div>
     );
 };
